@@ -1,0 +1,25 @@
+****FIND THE ERROR****
+This code works perfectly except for one pesky bug. Enter the number of the line on which the error appears to win this puzzle.
+
+1. #include <iostream>
+2. #include <fstream>
+3. 
+4. using namespace std;
+5.
+6. int main() {
+7.     string fileName = "fake_file.txt";
+8.     fstream infile(fileName);
+9.  
+10.   if(infile.is_open()){
+11.       string line;
+12.       int lineNum = 0;
+13.       while(getline(line, infile)){
+14.          lineNum++;
+15.          cout << "Line " << lineNum << ": " << line << endl;
+16.       }
+17.   }else{
+18.          cout << ÒFailed to open file.Ó << endl;
+19.   }
+20.   return 0; 
+21. }
+---

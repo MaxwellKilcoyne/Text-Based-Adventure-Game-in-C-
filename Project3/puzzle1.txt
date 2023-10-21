@@ -1,0 +1,33 @@
+****FIND THE ERROR****
+This code works perfectly except for one pesky bug. Enter the number of the line on which the error appears to win this puzzle.
+
+1. #include <iostream>
+2. using namespace std;
+3. 
+4. double frobenius(double arr1[][3], double arr2[][3]);
+5.
+6. int main() {
+7.     double arr1[3][3];
+8.     double arr2[3][3];
+9.  
+10.   for(int i = 0; i < 3; i++){
+11.       for(int j = 0; j < 3; j++) {
+12.           arr1[i][j] = i + j;
+13.           arr2[i][j] = i * j;
+14.       }
+15.   }
+16.
+17.   cout << frobenius(arr1, arr2) << endl;
+18.   return 0;
+19. }
+20.
+21. double frobenius(arr1[][3], arr2[][3]){
+22.   double innerProduct = 0;   
+23.   for(int i = 0; i < 3; i++){
+24.       for(int j = 0; j < 3; j++){  
+25.           innerProduct += arr1[i][j] * arr2[i][j];
+26.       }
+27.    }
+28.   return innerProduct;
+29. }
+---

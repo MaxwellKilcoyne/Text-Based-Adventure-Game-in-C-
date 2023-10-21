@@ -1,0 +1,21 @@
+****MULTIPLE CHOICE****
+Consider the following snippet of code. How many times will the sentence inside of the for loop be printed?
+
+#include <iostream>
+
+using namespace std;
+
+int main(){
+	int begin = 5;
+	int end = 20;
+    for (int i = begin; i <= end; i+=2){
+   	 cout << "This code does nothing important" << endl;
+    }
+	return 0;
+}
+
+A) 15
+B) 8
+C) 7
+D) 10
+---
